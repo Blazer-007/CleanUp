@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".userActivity">
+
+     <TextView
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome User"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/enterLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userName"
+        android:layout_marginTop="45dp"
+        android:text="Enter the Garbage Location :"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/locationID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enterLocation"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="39dp"
+        android:inputType="textPersonName"
+        android:text="location" />
+
+    <Button
+        android:id="@+id/addID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/locationID"
+        android:layout_marginTop="115dp"
+        android:text="Add to Database" />
+
+    <Button
+        android:id="@+id/viewID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/addID"
+        android:layout_marginBottom="-92dp"
+        android:text="View " />
+
+    <EditText
+        android:id="@+id/typeID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/locationID"
+        android:layout_marginTop="31dp"
+        android:inputType="textPersonName"
+        android:text="garbage type" />
+
+
+</RelativeLayout>
